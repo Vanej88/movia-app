@@ -1,0 +1,61 @@
+.register-login {
+    max-width: 442px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px  24px;
+    width:100%;
+
+    &__email {
+        grid-column: span 2;
+    }
+
+    &__box-password{
+        grid-column: span 2;
+        
+    }
+
+    &__box-input-pass {
+        position: relative;
+    }
+
+    &__eye{
+        position: absolute;
+        right: 16px;
+        top: 50%;
+        transform: translateY(-50%);
+        color: $gray;
+    }
+
+    &__checkbox{
+        display: flex;
+        align-items: center;
+    }
+
+    &__box-help{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-top: 16px;
+
+    }
+
+    &__save{
+        height:16px;
+        width:16px;
+        margin-right: 8px;
+    }
+
+    &__label{
+        display:inline-block;
+        color: $gray;
+        font-size: 14px;
+        
+    }
+
+    &__help{
+        color: $gray;
+        font-size: 14px;
+    }
+
+
+}

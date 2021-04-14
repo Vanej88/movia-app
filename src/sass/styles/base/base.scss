@@ -1,0 +1,19 @@
+body{
+    background-color: $colorSecondary;
+    font-family:  'Montserrat', sans-serif;
+}
+.page-register{
+    max-width: 1920px;
+    width: 100%;
+}
+
+button {
+    border: 0;
+    background-color: transparent;
+    cursor: pointer;
+    
+    &:focus {
+        outline: 0;
+    }
+}
+

@@ -1,0 +1,46 @@
+.form{
+    margin:24px 0;
+
+    &__btn-account{
+        color: $titleColor;
+        font-size: 16px;
+        font-weight: 700;
+        background-color: $colorPrimary;
+        border:none;
+        padding: 16px 24px; 
+        margin-right: 16px;
+    }
+
+    &__btn-login{
+        color: $titleColor;
+        font-size: 16px;
+        font-weight: 700;
+        background-color: transparent;
+        border: 1px solid $titleColor;
+        padding: 16px 24px;  
+    }
+}
+
+.button {
+    border: 1px solid transparent;
+    font-size: 16px;
+    font-weight: 700;
+    color: $white;
+    padding: 8px 16px;
+    background-color: transparent;
+    text-decoration: none;
+
+    &--big {
+        height: 48px;
+        padding: 0 16px;
+    }
+
+    &--blue { 
+        background-color: $colorPrimary;
+        border-color: $colorPrimary;
+    }
+
+    &--offline{
+        border-color: $white;
+    }
+}

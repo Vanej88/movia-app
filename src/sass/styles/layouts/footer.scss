@@ -1,0 +1,71 @@
+
+.footer-container{
+    margin: 0 200px; 
+    padding: 42px 0;
+    display:grid;
+    grid-template-columns: repeat(4, auto);
+    gap:24px;
+}
+
+.footer{   
+    background-color: #E0E0E0;
+    color: #9A9A9A;
+    font-size: 14px;
+    font-weight: 400;
+
+    &-description{
+        width: 310px;
+        margin-right: 32px;
+    }
+
+    &__logo{
+        font-size: 28px;
+        font-weight: 800;
+        color: $colorPrimary;
+        margin-bottom: 32px;
+    }
+
+    &__text{
+        margin-top: 32px;
+        line-height: 20px;
+        
+    }
+    
+    &__links{
+        display:flex;
+        line-height: 18px;
+
+        &-box{
+            margin-right: 30px;
+        }
+
+        &-title{
+            font-weight: 700;
+            color: $neutroColor;
+        }
+
+        &-item{
+            padding: 8px 0; 
+        }
+    }
+
+   
+}
+
+.subscribe__title{
+    font-weight: 700;
+    color: $neutroColor;
+}
+
+.subscribe__text{
+    margin: 10px 0; 
+    line-height: 20px;
+}
+
+.subscribe__checkbox-box{
+    margin: 10px 0 32px 0; 
+}
+
+.subscribe__checkbox{
+    margin-right: 16px;
+}

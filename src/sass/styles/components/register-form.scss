@@ -1,0 +1,19 @@
+.register-form {
+    max-width: 442px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px  24px;
+
+    &__email{
+        grid-column: span 2;
+    }
+    
+    &__password{
+        grid-column: span 2;
+    }
+
+    &__repeat{
+        grid-column: span 2;
+    }
+  
+}

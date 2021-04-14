@@ -1,0 +1,44 @@
+.container-header{
+    margin: 16px 74px;
+    display:grid;
+    grid-template-columns: auto 1fr auto;
+    column-gap: 32px;
+    align-items: center;
+}
+
+.logo__image{
+    height: 24px;
+    width: 72px;
+    font-size: 22px;
+    font-weight: 800;
+    color: $colorPrimary;
+}
+
+.header-nav{
+    color: $white; 
+}
+
+.nav__menu{
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    gap: 16px;
+    justify-content: start;
+    align-items: center;
+}
+
+.header-box-options{
+    display: flex;
+}
+.options__buscador{
+    color: $gray; 
+    background-color: transparent;
+    border: none; 
+}
+
+.options__profile{
+   &-img{
+       display:block; 
+       height:32px;
+       width:32px;
+   }
+}

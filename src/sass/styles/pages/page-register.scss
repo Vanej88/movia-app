@@ -1,0 +1,53 @@
+.page-register {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    height: 100vh;
+
+    &__column-left { 
+        max-width: 720px;
+        margin-top: 16px;
+        margin-left: 64px;
+    }
+
+    &__logo {
+        font-size: 42px;
+        font-weight: 800;
+        color: $colorPrimary;
+        display:block; 
+    }
+
+    &__column-right { 
+        background-image: url('../../../images/background-register.jpg');
+        background-size: cover;
+    }
+
+    &__box-content {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        height: calc(100% - 42px);
+    }
+
+    &__create{
+        font-size:32px;
+        font-weight: 700;
+    }
+    
+    &__instruction{
+        font-size: 16px;
+        color: $titleColor;
+        margin:24px 0;  
+    }
+
+    &__welcome{
+        font-size:32px;
+        font-weight: 700;
+    }
+
+    &__session{
+        font-size: 16px;
+        color: $titleColor;
+        margin:24px 0;  
+    }
+
+}

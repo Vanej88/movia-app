@@ -1,0 +1,32 @@
+
+.input {
+    display: block;
+    background-color: transparent;
+    border: 1px solid $formColor; 
+    padding: 16px;
+    font-size: 16px;
+    font-weight: 400;
+    height: 48px;
+    width: 100%;
+    color: $white;
+
+    &::placeholder {
+        color: $gray
+    }
+
+    &__text-help{
+        color: red;
+    }
+    
+    &--error{
+        border: 1px solid red;
+    }
+
+    &--footer{
+        font-size: 14px; 
+        line-height: 18px;
+        padding: 8px;
+    }
+}
+
+

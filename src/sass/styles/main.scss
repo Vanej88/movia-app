@@ -1,0 +1,23 @@
+@import './utilities/variables';
+@import './utilities/functions';
+@import './utilities/mixins';
+
+@import './base/reset'; 
+@import './base/box-sizing';
+@import './base/base';
+@import './base/fonts';
+@import './base/headings';
+
+@import './components/buttons'; 
+@import './components/register-form'; 
+@import './components/login-form';
+@import './components/choice';
+@import './components/slides'; 
+
+@import './layouts/header';
+@import './layouts/navigation';
+@import './layouts/forms';
+@import './layouts/grid';
+@import './layouts/footer';
+
+@import './pages/page-register'
