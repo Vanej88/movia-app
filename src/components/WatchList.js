@@ -21,13 +21,13 @@ export function SlideWatchlist() {
     }, [watchlist])
 
 
-    const slideComponents = watchlist.map((f, index) =>
-        <SwiperSlide className="slide"  index={f.index}>
-            <img src={`https://image.tmdb.org/t/p/w500/${f.poster_path}`} alt="" className="slide__img"/>
+    const slideComponents = watchlist.map((film, index) =>
+        <SwiperSlide className="slide"  index={film.index}>
+            <img src={`https://image.tmdb.org/t/p/w500/${film.poster_path}`} alt="" className="slide__img"/>
             <div className="slide__overlay">
                 <div className="slide__buttons">
                    <button className="slide__button-play"><FaRegPlayCircle/></button>
-                   <button className="slide__button-list"><FaMinus onClick={() => removeMovie(f)}/></button>
+                   <button className="slide__button-list"><FaMinus onClick={() => removeMovie(film)}/></button>
                 </div>
             </div>
         </SwiperSlide>

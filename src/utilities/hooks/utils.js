@@ -11,23 +11,26 @@ export const apiKey_OMDB = "c9480f3b";
 
 export const apiKey_TMDB = "843bd49154bbf3bc93413367405acebd";
 
+
 export function addMovie(film){
-    let watchList = read('whatchlist-data') ? read('whatchlist-data') : []
+
+    let watchList = read('watchlist-data') ? read('watchlist-data') : []
 
     const movieExists = watchList.find(film => film.film.id === film.film.id)
 
+
     if(!movieExists){
         watchList.push({film})
-        write('whatchlist-data', watchList)
+        write('watchlist-data', watchList)
         console.log(watchList)
     }
     
 }
 
 export function removeMovie(film){
-    let watchList = read('whatchlist-data') ? read('whatchlist-data') : []
+    let watchList = read('watchlist-data') ? read('watchlist-data') : []
 
     const favMovies = watchList.filter(item => item.film.id !== item.film.id)
-    write('whatchlist-data', favMovies)
+    write('watchlist-data', favMovies)
 }
   
