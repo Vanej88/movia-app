@@ -1,25 +1,10 @@
 import {Header} from './Header'
 import {Hero} from './Hero'
 import {SlideWatchlist} from './WatchList'
+import {SliderNowPlaying} from './SliderNowPlaying'
+import {SliderPopular} from './SliderPopular'
+import {SliderTopRated} from './SliderTopRated'
 import {Footer} from './Footer'
-import {Slider} from './Slider'
-
-
-
-function SectionSlider() {
-
-  return (
-    <div className="slide">
-      <section className="slide-watchlist" />
-      <Slider />
- 
-      <Slider />
-
-      <Slider />
-    </div>
-  );
-}
-
 
 function Home() {
   return (
@@ -27,7 +12,9 @@ function Home() {
       <Header />
       <Hero/>
       <SlideWatchlist/>
-      <SectionSlider/>
+      <SliderNowPlaying/>
+      <SliderPopular/> 
+      <SliderTopRated/>
       <Footer />
     </div>
   );

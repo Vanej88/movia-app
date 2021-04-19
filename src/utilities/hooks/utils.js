@@ -18,7 +18,6 @@ export function addMovie(film){
 
     const movieExists = watchList.find(film => film.film.id === film.film.id)
 
-
     if(!movieExists){
         watchList.push({film})
         write('watchlist-data', watchList)
@@ -33,4 +32,3 @@ export function removeMovie(film){
     const favMovies = watchList.filter(item => item.film.id !== item.film.id)
     write('watchlist-data', favMovies)
 }
-  

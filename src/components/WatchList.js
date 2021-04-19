@@ -20,26 +20,22 @@ export function SlideWatchlist() {
         return () => clearTimeout(timeout)
     }, [watchlist])
 
-
+    //console.log(watchlist[0])
     const slideComponents = watchlist.map((film, index) =>
         <SwiperSlide className="slide"  index={film.index}>
-            <img src={`https://image.tmdb.org/t/p/w500/${film.poster_path}`} alt="" className="slide__img"/>
+            <img src={`https://image.tmdb.org/t/p/w500/${film.film.poster_path}`} alt="" className="slide__img"/>
             <div className="slide__overlay">
                 <div className="slide__buttons">
-                   <button className="slide__button-play"><FaRegPlayCircle/></button>
-                   <button className="slide__button-list"><FaMinus onClick={() => removeMovie(film)}/></button>
+                   <button className="button slide__button-list"><FaMinus onClick={() => removeMovie(film)}/></button>
+                   <button className="button slide__button-play"><FaRegPlayCircle/></button>
                 </div>
-            </div>
+            </div> 
         </SwiperSlide>
     )
 
-
-
-    // https://api.themoviedb.org/3/movie/now_playing?api_key=13f55cdc863fb7b55567782f8e38ded4
-
     return (
             watchlist.length !== 0 && (
-                <section className="slide-last-movies">
+                <section className="slide-watchlist">
                     <h2>Watchlist</h2>
                     <Swiper
                         spaceBetween={32}
