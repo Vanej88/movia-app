@@ -2,23 +2,43 @@ import imagenes from "../images/imagenes";
 import {useState, useEffect} from 'react'
 import{apiKey_TMDB} from './../utilities/hooks/utils'
 import { searchMovie } from "../utilities/hooks/utils";
+import {Title} from './Title'
 
 
 export function Header() {
 
-    const [search, setSearch] = useState('')
-    const [value, setValue] = useState('')
-    
-    useEffect(()=>{
-        fetch(`https://api.themoviedb.org/3/movie/popular?api_key=${apiKey_TMDB}`)
-            .then(response => response.json())
-            .then(data => {
-                console.log(data.results[0].title)})
-    }, [])
+    //const [dataResults, setDataResults] = useState([])
+    const [inputSearch, setInputSearch] = useState('')
+    const [movieList, setMovieList] = useState('')
 
+    const inputHandler = ev => {
+        if(ev.keyCode === 13){
+            
+            setMovieList(ev.target.value);
+            // console.log(`this is ${movieList}`)
+            
+            // console.log(ev.target.movieList)
+
+            const api_url = `https://api.themoviedb.org/3/search/movie/?api_key=${apiKey_TMDB}&query=${encodeURIComponent(ev.target.value)}`;
+
+            //console.log("api_url", api_url);
+
+            fetch(api_url)
+                .then(response => response.json())
+                .then(data => {
+                    console.log(data.results)
+                   setMovieList(data.results)
+
+                })
+        }
+    }
+    
+    const moviesGrid = movieList.map((movie) => <Title title={movie.title} poster={movie.poster_path}/>)
+    
     const btnBuscar = ev => {
         if(ev){
-            setSearch(<input type="text" placeholder="títulos, películas, personajes" class="input imput--search" value={value}/>)
+            setInputSearch(<input type="text" placeholder="títulos, películas, personajes" className="input input--search" onKeyDown={inputHandler}/>)
+            
         }
     }
 
@@ -46,7 +66,7 @@ export function Header() {
               </nav>
   
               <div className="header-box-options">
-                  {search}
+                  {inputSearch && moviesGrid} 
                   <button className="options__buscador" onClick={btnBuscar}>
                       <i className="fas fa-search"></i>
                   </button>
