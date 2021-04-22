@@ -25,11 +25,11 @@ export function SliderNowPlaying(){
     )
     
     return(
-      <section className="slide">
+      <section className="section-slide">
         <h2>Now Playing</h2>
         <Swiper
-          spaceBetween={2}
-          slidesPerView={5}
+          spaceBetween={32}
+          slidesPerView={5.5}
           slidesPerGroup={4}
           Navigation
           >

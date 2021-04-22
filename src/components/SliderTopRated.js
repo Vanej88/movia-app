@@ -19,17 +19,17 @@ export function SliderTopRated(){
   }, [])
 
     const slideComponents = top.map((film) => 
-    <SwiperSlide className='slide'>
+    <SwiperSlide className='slider'>
         <Movie film={{...film}}/>
       </SwiperSlide>
     )
     
     return(
-      <section className="slide">
+      <section className="section-slide">
         <h2>Top Rated</h2>
         <Swiper
-          spaceBetween={2}
-          slidesPerView={5}
+          spaceBetween={32}
+          slidesPerView={5.5}
           slidesPerGroup={4}
           Navigation
           >

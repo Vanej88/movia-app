@@ -26,7 +26,7 @@ export function SlideWatchlist() {
             <img src={`https://image.tmdb.org/t/p/w500/${film.film.poster_path}`} alt="" className="slide__img"/>
             <div className="slide__overlay">
                 <div className="slide__buttons">
-                   <button className="button slide__button-list"><FaMinus onClick={() => removeMovie(film)}/></button>
+                   <button className="button slide__button-list"><FaMinus onClick={() => removeMovie(film.film)}/></button>
                    <button className="button slide__button-play"><FaRegPlayCircle/></button>
                 </div>
             </div> 
@@ -35,8 +35,8 @@ export function SlideWatchlist() {
 
     return (
             watchlist.length !== 0 && (
-                <section className="slide-watchlist">
-                    <h2>Watchlist</h2>
+                <section className="section-slide">
+                    <h2 className="section-slide__title">Watchlist</h2>
                     <Swiper
                         spaceBetween={32}
                         slidesPerView={6.5}

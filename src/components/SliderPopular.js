@@ -24,12 +24,12 @@ export function SliderPopular(){
       </SwiperSlide>
     )
     
-    return(
-      <section className="slide">
+    return( 
+      <section className="section-slide">
         <h2>Popular</h2>
         <Swiper
-          spaceBetween={2}
-          slidesPerView={5}
+          spaceBetween={32}
+          slidesPerView={5.5}
           slidesPerGroup={4}
           Navigation
           >
