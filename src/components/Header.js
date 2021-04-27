@@ -1,6 +1,5 @@
 import imagenes from "../images/imagenes";
 
-
 export function Header({sendQuery, query}) {
 
     const inputHandler = ev => sendQuery(ev.target.value); 

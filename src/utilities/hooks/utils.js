@@ -1,3 +1,5 @@
+import {navigate} from 'hookrouter';
+import { MoviePage } from '../../components/MoviePage';
 
 export function write(key, data){
     localStorage.setItem(key, JSON.stringify(data))
@@ -31,4 +33,13 @@ export function removeMovie(film){
 
     const favMovies = watchList.filter(item => item.film.id !== film.id)
     write('watchlist-data', favMovies)
+}
+
+export function movieInfo(film){
+    console.log(film)
+    let movie = film.original_title
+    navigate(`/${movie}`)
+    //navigate('/movie')
+
+    
 }

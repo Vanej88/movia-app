@@ -1,0 +1,19 @@
+.movie-page{
+    display:grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.movie-column-left{
+    background-image: url('./../../../images/breaking-bad.jpg');
+    height:100vh;
+    width:100%;
+    object-fit: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    
+}
+
+.movie-column-right{
+    color:$white;
+    padding:24px 0;
+}

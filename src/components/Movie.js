@@ -1,7 +1,9 @@
 import React, {Fragment} from "react";
-import {addMovie} from './../utilities/hooks/utils'
+import {A} from 'hookrouter'; 
+import {addMovie, movieInfo} from './../utilities/hooks/utils'
 import {FiPlus} from "react-icons/fi";
-import {FaEye} from 'react-icons/fa'; 
+import {FaRegPlayCircle} from 'react-icons/fa'; 
+import { MoviePage } from "./MoviePage";
 
 
 const Movie = ({ film }) => {
@@ -13,11 +15,12 @@ const Movie = ({ film }) => {
         <div className="slide__overlay">
             <div className="slide__box-btns">
               <button className="slide__btn slide__btn--add" onClick={() => addMovie(film)}><FiPlus/></button>
-              <button className="slide__btn slide__btn--play"><FaEye/></button>
+              <button className="button slide__button-play" onClick={() => movieInfo(film)}><FaRegPlayCircle/></button>
+              {/* <A href={`${film.original_title}`}><button className="slide__btn slide__btn--play" onClick={() => 
+              <MoviePage/>}
+            ><FaRegPlayCircle/></button></A> */}
             </div>
         </div>
-         {/* <MoviePoster poster={poster_path}/> */}
-       {/* <Card title={Title} genre={Genre} plot={Plot}/>  */}
     </Fragment>
   );
 };

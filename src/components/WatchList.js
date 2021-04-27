@@ -1,11 +1,13 @@
 import React from 'react'
+import {A} from 'hookrouter';
 import SwiperCore, { Navigation } from 'swiper';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/swiper.scss';
 import 'swiper/components/navigation/navigation.scss';
 import { useState, useEffect } from 'react'
 import { FaRegPlayCircle, FaMinus } from "react-icons/fa";
-import {read,removeMovie} from './../utilities/hooks/utils'
+import {read,removeMovie, movieInfo} from './../utilities/hooks/utils'
+import {MoviePage} from './MoviePage'; 
 
 SwiperCore.use([Navigation]);
 
@@ -25,9 +27,10 @@ export function SlideWatchlist() {
         <SwiperSlide className="slide"  index={film.index}>
             <img src={`https://image.tmdb.org/t/p/w500/${film.film.poster_path}`} alt="" className="slide__img"/>
             <div className="slide__overlay">
-                <div className="slide__buttons">
-                   <button className="button slide__button-list"><FaMinus onClick={() => removeMovie(film.film)}/></button>
-                   <button className="button slide__button-play"><FaRegPlayCircle/></button>
+                <div className="slide__box-btns">
+                    <button className="slide__btn slide__btn--add"><FaMinus onClick={() => removeMovie(film.film)}/></button>
+                    {/* <A href={`${film.film.original_title}`}><button className="slide__btn slide__btn--play" onClick={() => <MoviePage/>}><FaRegPlayCircle/></button></A> */}
+                    <button className="button slide__button-play" onClick={() => movieInfo(film.film)}><FaRegPlayCircle/></button>
                 </div>
             </div> 
         </SwiperSlide>
