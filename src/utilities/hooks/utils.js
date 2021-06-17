@@ -37,9 +37,9 @@ export function removeMovie(film){
 
 export function movieInfo(film){
     console.log(film)
-    let movie = film.original_title
-    navigate(`/${movie}`)
+    let movie = film.id
+    navigate(`/movie/${movie}`, false,{ film:film } )
     //navigate('/movie')
-
+    
     
 }

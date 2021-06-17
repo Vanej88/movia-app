@@ -15,7 +15,7 @@ function App() {
       '/': () => <Home/>,
       '/registro': () => <Registro/>,
       '/login': () => <Login/>,
-      '/movie': () => <MoviePage/>
+      '/movie/:id': ({id}) => <MoviePage id={id} />
       
     }
     
