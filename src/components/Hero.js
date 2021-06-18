@@ -23,13 +23,13 @@ export function Hero() {
   
             <div className="movie-details__choice-btn">
               <button className="button button--big button--blue" type="button">
-                <i className="far fa-play-circle"></i>Watch trailer
+                <i className="btn-icon far fa-play-circle"></i>Watch trailer
               </button>
               <button
                 className="button button--big button--offline"
                 type="button"
               >
-                <i className="fas fa-plus"></i>Watchlist
+                <i className="btn-icon fas fa-plus"></i>Watchlist
               </button>
             </div>
           </div>
