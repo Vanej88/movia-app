@@ -29,7 +29,7 @@ export function Header({sendQuery, query}) {
               <div className="header-box-options">
                 <input type="text" placeholder="títulos, películas, personajes" className="input input--search" value={query} onChange={inputHandler}/>
                 <button className="options__buscador">
-                      <i className="fas fa-search"></i>
+                      <i className="btn-icon fas fa-search"></i>
                 </button>
                 <button className="options__profile" />
                 <img

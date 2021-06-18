@@ -40,12 +40,14 @@
        display:block; 
        height:32px;
        width:32px;
+       margin: 8px;
    }
 }
 
 .non-found{
     height: 100%;
 }
+
 .non-found-msg{
     color:red;
 }
