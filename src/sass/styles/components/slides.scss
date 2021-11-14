@@ -29,6 +29,31 @@
 
 }
 
+@media(max-width:675px){
+    .slide{
+
+        &__btn {
+            font-size:14px;
+            color: $white;
+            margin-right: 2px;
+            margin-bottom: 8px;
+
+            &--add{
+                font-size:10px;
+                margin-bottom: 0px;
+            }
+        }
+
+        &__box-btns {
+            
+            padding: 0px;
+            display: flex;
+            flex-direction: column;
+    
+        }
+    }
+}
+
 
 
 // .slide-watchlist{

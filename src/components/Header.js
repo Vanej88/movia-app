@@ -15,13 +15,13 @@ export function Header({sendQuery, query}) {
               <nav className="header-nav">
                   <ul className="nav__menu">
                   <li className="nav__menu-item">
-                      <a className="nav__menu-link">Series</a>
+                      <a className="nav__menu-link">Now Playing</a>
                   </li>
                   <li className="nav__menu-item">
-                      <a className="nav__menu-link">Películas</a>
+                      <a className="nav__menu-link">Popular</a>
                   </li>
                   <li className="nav__menu-item">
-                      <a className="nav__menu-link">Watchlist</a>
+                      <a className="nav__menu-link">Top Rated</a>
                   </li>
                   </ul>
               </nav>
@@ -29,7 +29,7 @@ export function Header({sendQuery, query}) {
               <div className="header-box-options">
                 <input type="text" placeholder="títulos, películas, personajes" className="input input--search" value={query} onChange={inputHandler}/>
                 <button className="options__buscador">
-                      <i className="btn-icon fas fa-search"></i>
+                    <i className="btn-icon fas fa-search"></i>
                 </button>
                 <button className="options__profile" />
                 <img

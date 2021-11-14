@@ -19,7 +19,7 @@ export function MoviePage(id, film) {
         <Fragment>
 
           <div className="movie-column-left">
-            <img src={`https://image.tmdb.org/t/p/w500/${target.poster_path}`} />
+            <img src={`https://image.tmdb.org/t/p/w500/${target.poster_path}`}/>
           </div>
 
           <div className="movie-column-right">

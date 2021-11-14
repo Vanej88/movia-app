@@ -2,7 +2,11 @@
     padding-left: 64px;
     margin-bottom: 64px;
 
-    &__title {
-        
+}
+
+@media (max-width: 675px){
+    .section-slide{
+        padding-left: 16px;
+        margin-bottom: 24px;
     }
 }

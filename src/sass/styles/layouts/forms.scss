@@ -24,7 +24,7 @@
 
     &--footer{
         font-size: 14px; 
-        color: $formColor;
+        color: $neutroColor;
         line-height: 18px;
         padding: 8px;
     }
@@ -33,6 +33,56 @@
         display: block;
         padding: 8px; 
         margin-right: 16px;
+    }
+
+
+}
+
+.movie{
+
+    &__menu{
+        margin-top: 72px;
+    }
+
+    &__list{
+    padding: 8px;
+    margin: 0px 72px;
+    }
+
+    &__title{
+    margin-top: 16px;
+    font-weight: 400;
+    font-size: 24px;
+    }
+}
+
+
+@media (max-width: 675px) {
+    .input{
+
+        font-size: 14px;
+        
+        &--search{
+            height: 32px;
+            font-size: 12px;
+        }
+    }
+
+    .movie{
+
+        &__menu{
+            margin-top: 24px;
+        }
+
+        &__list{
+            margin: 16px;
+        }
+
+        &__title{
+            margin-top: 0px;
+            font-weight: 400;
+            font-size: 16px;
+        }
     }
 }
 

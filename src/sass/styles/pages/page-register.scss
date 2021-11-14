@@ -51,3 +51,26 @@
     }
 
 }
+
+@media (max-width:675px){
+    .page-register {
+      
+        &__column-left { 
+            margin-left: 32px;
+            width: 100%;
+        }
+
+        &__column-right { 
+           display:none;
+        }
+
+        &__create{
+            font-size:24px;
+        }
+
+        &__instruction{
+            font-size: 14px;
+            line-height: 1.5; 
+        }
+    }
+}   

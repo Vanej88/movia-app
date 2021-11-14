@@ -47,4 +47,23 @@
     &--offline{
         border-color: $white;
     }
+
+    &--social-icon{
+        padding: 16px;
+    }
+}
+
+@media (max-width:675px){
+
+    .button{
+
+        font-size: 10px;
+        margin-bottom: 6px;
+        
+        &--big {
+            height: 32px;
+            padding: 2px 12px; 
+        }
+
+    }
 }

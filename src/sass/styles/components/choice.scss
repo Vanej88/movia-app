@@ -50,3 +50,26 @@
 .button--blue{
     margin-right: 24px;
 }
+
+@media (max-width: 675px){
+    .container-choice{
+        margin: 32px 0px;
+    }
+
+    .movie-details{
+        margin: 0 16px;
+
+        &__title{
+            font-size:36px;
+        }
+
+        &__plot{
+            margin-top: 14px;
+            width: 100%;
+        }
+
+        &__choice-btn{
+            margin-top: 10px;
+        }
+    }  
+}

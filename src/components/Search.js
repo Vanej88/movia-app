@@ -1,5 +1,6 @@
 import {useState, useEffect, Fragment} from 'react';
-import{apiKey_TMDB} from './../utilities/hooks/utils'
+import{apiKey_TMDB} from './../utilities/hooks/utils';
+
 
 export function PageResults({query}){
 
@@ -19,23 +20,26 @@ export function PageResults({query}){
 
     const matchMovies = movies.filter((item) => item.original_title.toLowerCase().includes(query.toLowerCase()))
     //console.log(matchMovies)
-    const movieTitles = matchMovies.map((film)=>
-        <li>
-            <h2>{film.original_title}</h2>
+    const movieTitles = matchMovies.map((film)=> 
+        <li className="movie__list">
+            <h2 className="movie__title">{film.original_title}</h2>
         </li>
-    )
+    );
 
     return(
         <div>
-            {matchMovies ? (
-                <ul>
+            {movieTitles ? (
+                <ul className="movie__menu">
                     {movieTitles}
                 </ul>
-            ):   
+            ): (
                 <div className="non-found">
-                    <p className="non-found-msg">No hay resultados para esta búsqueda</p>    
-                </div>
-            }
+                <p className="non-found-msg">No hay resultados para esta búsqueda</p>    
+            </div>
+            )
+        }
+
         </div>
     )
-}
+
+    }         

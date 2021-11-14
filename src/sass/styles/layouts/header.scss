@@ -29,6 +29,7 @@
 .header-box-options{
     display: flex;
 }
+
 .options__buscador{
     color: $gray; 
     background-color: transparent;
@@ -50,4 +51,41 @@
 
 .non-found-msg{
     color:red;
+}
+
+@media (max-width:675px) {
+    .container-header{
+        margin: 16px;
+        display:flex;
+        flex-direction: column;
+        align-items: start;
+    }
+
+    .header-box-logo{
+        margin-bottom: 8px;
+    }
+
+    .header-nav{
+        margin-bottom: 8px; 
+    }
+
+    .nav__menu{
+        font-size: 14px;
+    }
+
+    .header-box-options{
+        margin-top: 8px;
+        
+    }
+
+    .options__profile{
+        &-img{
+            position: absolute;
+            top:8px;
+            right: 8px;
+            height:24px;
+            width:24px;
+         
+        }
+     }
 }

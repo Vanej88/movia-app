@@ -12,16 +12,16 @@ export function Footer() {
               compartan y visualicen películas y series.
             </p>
             <div className="social-media-icons">
-              <button className="button"><GrFacebook/></button>
-              <button className="button"><GrInstagram/></button>
-              <button className="button"><GrTwitter/></button>
-              <button className="button"><GrYoutube/></button>
+              <button className="button button--social-icon"><GrFacebook/></button>
+              <button className="button button--social-icon"><GrInstagram/></button>
+              <button className="button button--social-icon"><GrTwitter/></button>
+              <button className="button button--social-icon"><GrYoutube/></button>
             </div>
           </div>
   
           <div className="footer__links">
             <ul className="footer__links-box">
-              <p className="footer__links-title">Compañia</p>
+              <p className="footer__links-title">Compañía</p>
               <li className="footer__links-item">Zona de prensa</li>
               <li className="footer__links-item">Privacidad</li>
               <li className="footer__links-item">Aviso legales</li>
@@ -30,7 +30,7 @@ export function Footer() {
             </ul>
   
             <ul className="footer__links-box">
-              <p className="footer__links-title">Compañia</p>
+              <p className="footer__links-title">Compañía</p>
               <li className="footer__links-item">Series</li>
               <li className="footer__links-item">Películas</li>
               <li className="footer__links-item">Watchlist</li>
