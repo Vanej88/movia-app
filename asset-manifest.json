@@ -1,0 +1,27 @@
+{
+  "files": {
+    "main.css": "/movia-app/static/css/main.61e9d7e1.chunk.css",
+    "main.js": "/movia-app/static/js/main.a7156e90.chunk.js",
+    "main.js.map": "/movia-app/static/js/main.a7156e90.chunk.js.map",
+    "runtime-main.js": "/movia-app/static/js/runtime-main.abcf375b.js",
+    "runtime-main.js.map": "/movia-app/static/js/runtime-main.abcf375b.js.map",
+    "static/css/2.2cef03cd.chunk.css": "/movia-app/static/css/2.2cef03cd.chunk.css",
+    "static/js/2.97a2e4df.chunk.js": "/movia-app/static/js/2.97a2e4df.chunk.js",
+    "static/js/2.97a2e4df.chunk.js.map": "/movia-app/static/js/2.97a2e4df.chunk.js.map",
+    "index.html": "/movia-app/index.html",
+    "static/css/2.2cef03cd.chunk.css.map": "/movia-app/static/css/2.2cef03cd.chunk.css.map",
+    "static/css/main.61e9d7e1.chunk.css.map": "/movia-app/static/css/main.61e9d7e1.chunk.css.map",
+    "static/js/2.97a2e4df.chunk.js.LICENSE.txt": "/movia-app/static/js/2.97a2e4df.chunk.js.LICENSE.txt",
+    "static/media/main.scss": "/movia-app/static/media/you.1473e509.jpg",
+    "static/media/breaking-bad.74a0ef63.jpg": "/movia-app/static/media/breaking-bad.74a0ef63.jpg",
+    "static/media/gambit.1fa23b00.jpg": "/movia-app/static/media/gambit.1fa23b00.jpg",
+    "static/media/stranger-things.cf08fe1f.jpg": "/movia-app/static/media/stranger-things.cf08fe1f.jpg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.abcf375b.js",
+    "static/css/2.2cef03cd.chunk.css",
+    "static/js/2.97a2e4df.chunk.js",
+    "static/css/main.61e9d7e1.chunk.css",
+    "static/js/main.a7156e90.chunk.js"
+  ]
+}
